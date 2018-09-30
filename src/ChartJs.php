@@ -76,6 +76,7 @@ class ChartJs extends Widget
         if (!isset($this->options['id'])) {
             $this->options['id'] = $this->getId();
         }
+        \Yii::setAlias('@chartjs_bower', dirname(dirname(__FILE__)));
     }
 
     /**
